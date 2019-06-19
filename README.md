@@ -334,3 +334,4 @@ var line = canvas.append("line")
                 .attr("stroke-width", 10);
 
 ```
+![svg shapes](https://github.com/isabelbbeard/d3-notes/blob/master/images/Screenshot%202019-06-19%20at%2012.02.53.png)
