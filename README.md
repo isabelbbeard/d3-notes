@@ -4,6 +4,7 @@
 - [HTML5](#html5)
 - [CSS](#css)
 - [Javascript](#Javascript)
+- [D3](#d3)
 
 
 ## Atom
@@ -15,6 +16,8 @@ It's useful to have some sort of code editor, [Atom](https://atom.io/) is really
 ### Structuring HTML5 Documents
 HTML5 is essential a structure document outlines.
 ![html structure](https://github.com/isabelbbeard/d3-notes/blob/master/images/Screenshot%202019-06-19%20at%2010.35.12.png)
+
+DOM, is the Document Object Model
 
 Sectioning elements
 - `article`, `aside`, `nav` and `section`
@@ -281,4 +284,53 @@ var calculateGratuity = function(bill) {
 
 calculateGratuity(38);
 >> 7.6
+```
+
+## D3
+
+- Great series of tutorials on [youtube](https://www.youtube.com/watch?v=n5NcCoa9dDU&list=UUNYL0ZF2j8-OSGZ4iHBLNPA&index=20).
+- [Examples of d3](https://github.com/d3/d3/wiki/Gallery)
+- [Documentation of d3](https://github.com/d3/d3/blob/master/API.md)
+
+Adding d3 to a Document
+```html5
+<script src = 'http://d3js.org/d3.v3.min.js'></script>
+```
+Adding a d3 element within the body
+```html5
+<script>
+      // d3.select("p").text("Hello World");
+      d3.select("body") //.select selecs an elements
+        .append("p")  //.append adds elements
+        .style("color", "red") //.style affects the css of the item
+        .text("Hi, Whats Up?")
+</script>
+```
+### Creating some svg shapes (within a script tag)
+
+```JavaScript
+var canvas = d3.select("body")
+                .append("svg") //adds svg element to the pages
+                .attr("width", 500) //when styling svg elements we use attribute method instead of style
+                .attr("height", 500); //always end with semicolon
+
+var circle = canvas.append("circle")
+                  .attr("cx", 250)
+                  .attr("cy", 250)
+                  .attr("r", 50)
+                  .attr("fill", "blue");
+
+var rect = canvas.append("rect")
+                  .attr("width", 50)
+                  .attr("height", 150)
+                  .attr("fill", "red");
+
+var line = canvas.append("line")
+                .attr("x1", 0)
+                .attr("y1", 100)
+                .attr("x2", 400)
+                .attr("y2", 400)
+                .attr("stroke", "green")
+                .attr("stroke-width", 10);
+
 ```
