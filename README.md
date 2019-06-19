@@ -2,7 +2,7 @@
 
 - [Atom](#atom)
 - [HTML5](#atom)
-- [CSS](#css-link)
+- [CSS](#css-details)
 
 
 ## Atom(#atom)
@@ -123,7 +123,7 @@ Use H1 per page (in the <header> section). It is the main header of the document
 <p> Text goes here for a paragraph </p>
 ```
 
-## <a href='#css-link' class='anchor' aria-hidden='true'>CSS</a>
+## CSS details
 
 #### Headings
 Headings create new sections.
