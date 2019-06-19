@@ -62,3 +62,39 @@ Header is usually where logo navigation sits and is inside the <body>
   <header><!-- branding and navigation go here--></header >
 </body>
 ```
+
+#### Article
+Articles are stand alone content (like an article of clothing) - can be removed from the page and still understandable.
+```HTML5
+<article>  
+  <!-- main review go here-->
+</article>
+```
+
+#### Section
+Groups themed content together. All content within is related. (Like a section of contents). Or a section within an article.
+```HTML5
+<section><!-- comments go here--></section>
+```
+
+#### Aside
+Aside content is related to it’s siblings but isn’t really important enough to be it’s own article.
+```HTML5
+<aside><!-- ad copy go here--></aside>
+```
+
+#### Footer
+For elements that can go in a footer.
+```HTML5
+<footer><!-- disclaimer and contact info go here--></footer
+```
+
+### Emphasizing text
+```HTML5
+<i></i> <!-- Italic is for a span of text in an alternate voice or mood -->
+<em></em> <!-- Represents stress emphasis of its elements -->
+<b></b> <!-- Represents a span of text to which attention is being drawn for utilitarian purposes without conveying extra importance and with no implication of an alternate voice or mood -->
+<strong></strong> <!-- Represents strong importance or seriousness -->
+
+
+```
