@@ -125,4 +125,15 @@ Use H1 per page (in the <header> section). It is the main header of the document
 
 ## CSS(#css)
 
-another test
+#### Headings
+Headings create new sections.
+Use H1 per page (in the <header> section). It is the main header of the document.
+```HTML5
+<H1>Page header here</H1>
+<H2>Another heading level</H2>
+```
+
+#### Paragraphs
+```HTML5
+<p> Text goes here for a paragraph </p>
+```
