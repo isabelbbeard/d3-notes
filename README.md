@@ -185,9 +185,9 @@ These match the single element with a given ID. Id’s can only be used once.
 
 [List](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) of CSS properties.
 
-### Referencing Sytles
+### Referencing Styles
 
-#### Embed CSS in your HTML
+#### Embed CSS in your HTML
 ```html5
 <html>
   <head>
@@ -224,3 +224,61 @@ These match the single element with a given ID. Id’s can only be used once.
 ```
 
 ## Javascript
+JavaScript is the language that can make pages dynamic by manipulating the DOM after a page has already loaded in the browser.
+
+Print something in the console:
+```JavaScript
+console.log('something');
+```
+
+#### Variables
+Variables are containers for data. A simple variable holds one value:
+```JavaScript
+var number = 5;
+```
+
+#### Arrays
+An array is a sequence of values stored in one variable.
+```JavaScript
+var numbers = [5, 10, 15, 20]
+Numbers[2]
+>> 15
+```
+
+#### Objects
+Objects are a custom data structure. Use curly brackets to indicate an object. In between the brackets, there are properties and values.
+```JavaScript
+var fruit = {
+	kind: "orange",
+	color: "red",
+	quantity: 12
+};
+
+fruit.kind
+>> "orange"
+```
+
+#### If (only)
+An if statements uses comparison operators to determine if a statement is true or false:
+```JavaScript
+if (3 < 5) {
+	console.log("woohoo");
+}
+```
+#### for() now
+For loops repeatedly execute the same code with slight variations:
+```JavaScript
+for (var i = 0; i < 5; i++){
+	console.log(i)
+}
+```
+#### Functions
+Functions are chunks of code that can do things. An example of a made-up function:
+```JavaScript
+var calculateGratuity = function(bill) {
+	Return bill * 0.2;
+}
+
+calculateGratuity(38);
+>> 7.6
+```
