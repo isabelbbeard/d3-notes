@@ -5,7 +5,7 @@
 - [CSS](#css)
 
 
-## Atom (#atom)
+#atom (#atom)
 It's useful to have some sort of code editor, [Atom](https://atom.io/) is really nice and allows you to add plugins to help with workflow.
 
 ## HTML5(#html5)
