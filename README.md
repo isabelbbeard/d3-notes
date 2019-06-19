@@ -292,7 +292,7 @@ calculateGratuity(38);
 - [Examples of d3](https://github.com/d3/d3/wiki/Gallery)
 - [Documentation of d3](https://github.com/d3/d3/blob/master/API.md)
 
-Adding d3 to a Document test
+Adding d3 to a Document
 ```html5
 <script src = 'http://d3js.org/d3.v3.min.js'></script>
 ```
