@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>D3 tutorial</title>
+  <script src = 'http://d3js.org/d3.v3.min.js'></script>
+</head>
+
+<body>
+   <!-- <p>This is a paragraph</p> -->
+
+  <script>
+    var canvas = d3.select("body")
+                    .append("svg") //adds svg element to the pages
+                    .attr("width", 500) //when styling svg elements we use attribute method instead of style
+                    .attr("height", 500); //always end with semicolon
+
+    var circle = canvas.append("circle")
+                      .attr("cx", 250)
+                      .attr("cy", 250)
+                      .attr("r", 50)
+                      .attr("fill", "blue");
+
+    var rect = canvas.append("rect")
+                      .attr("width", 50)
+                      .attr("height", 150)
+                      .attr("fill", "red");
+
+    var line = canvas.append("line")
+                    .attr("x1", 0)
+                    .attr("y1", 100)
+                    .attr("x2", 400)
+                    .attr("y2", 400)
+                    .attr("stroke", "green")
+                    .attr("stroke-width", 10);
+  </script>
+
+</body>
+
+</html>
