@@ -1,12 +1,11 @@
 # d3 Guide
 
-- [Atom](#atom-test)
+- [Atom](#atom)
 - [HTML5](#atom)
 - [CSS](#css)
 
 
-## Atom
-(#atom-test)
+## Atom(#atom)
 It's useful to have some sort of code editor, [Atom](https://atom.io/) is really nice and allows you to add plugins to help with workflow.
 
 ## HTML5(#html5)
@@ -124,4 +123,6 @@ Use H1 per page (in the <header> section). It is the main header of the document
 <p> Text goes here for a paragraph </p>
 ```
 
-## CSS (#css)
+## CSS(#css)
+
+another test
