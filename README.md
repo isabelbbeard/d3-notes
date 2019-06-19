@@ -17,3 +17,48 @@ Sectioning elements
 Grouping
 - `footer`, `header` and `main`
 - Used to group sections
+
+### Starting a Documents
+
+#### Doctype
+You need to declare the doctype:
+
+```HTML5
+<!doctype html>
+```
+
+#### Boiler Plate
+Start a document structure (boiler plate):
+```HTML5
+<!doctype html>
+<html lang = "en">
+
+  <head>
+      <meta charset="utf-8">
+  </head>
+
+  <body>
+  </body>
+
+</html>
+```
+
+#### Comments
+comments are written as:
+```HTML5
+<!-- Your comment here -->
+```
+
+#### Title
+Add a page title in the <head>
+```HTML5
+<title> Page title here </title>
+```
+
+#### Header
+Header is usually where logo navigation sits and is inside the <body>
+```HTML5
+<body>
+  <header><!-- branding and navigation go here--></header >
+</body>
+```
