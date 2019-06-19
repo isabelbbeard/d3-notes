@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>D3 tutorial</title>
+  <script src = 'http://d3js.org/d3.v3.min.js'></script>
+</head>
+
+<body>
+   <!-- <p>This is a paragraph</p> -->
+
+  <script>
+
+    var dataArray = [5, 40, 50, 60];
+
+    var width = 600;
+    var height = 600;
+
+    var widthScale = d3.scale.linear()
+            .domain([0, 60]) // type in min and max of our dataArray
+            .range([0, width-50]); //set new range we want
+
+    var color = d3.scale.linear() //color scale using dataArray
+            .domain([0, 60])
+            .range(["red", "blue"]);
+
+    var axis = d3.svg.axis()
+            .ticks(5) // change number of ticks
+            .scale(widthScale); //add an axis that needs to be called later
+
+    var canvas = d3.select("body")
+            .append("svg") //adds svg element to the pages
+            .attr("width", width) //when styling svg elements we use attribute method instead of style
+            .attr("height", height) //always end with semicolon
+            .append("g") // "g" is a group. Everything in the canvas is now grouped and allows ust to apply transformations to the whole group
+            .attr("transform", "translate(20, 0)"); // moves the whole grouped element
+
+
+    var bars = canvas.selectAll("rect") //selects ALL rectangles. Because there are no rectangles, it will return and empty selection.
+            .data(dataArray) // we then use the empty selection to bind to the data
+            .enter() //returns placeholders for each data element for which there are no corresponding elements (in this case three placeholders)
+            .append("rect") //append rectangle for each data element
+            .attr("width", function(d){return widthScale(d);}) //d is each element to pass through the function
+            .attr("height", 50)
+            .attr("fill", function(d){return color(d)})
+            .attr("y", function(d, i){return 100*i}); //uses the index of the data
+
+    canvas.append("g")
+            .attr("transform", "translate(0, 400)")
+            .call(axis);
+
+  </script>
+
+</body>
+
+</html>

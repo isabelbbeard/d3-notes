@@ -335,3 +335,6 @@ var line = canvas.append("line")
 
 ```
 ![svg shapes](https://github.com/isabelbbeard/d3-notes/blob/master/images/Screenshot%202019-06-19%20at%2012.02.53.png)
+
+### Create simple bars using data
+See code here to create this output:
