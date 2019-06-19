@@ -1,11 +1,12 @@
 # d3 Guide
 
-- [Atom](#atom)
+- [Atom](#atom-test)
 - [HTML5](#atom)
 - [CSS](#css)
 
 
-#atom (#atom)
+## Atom
+(#atom-test)
 It's useful to have some sort of code editor, [Atom](https://atom.io/) is really nice and allows you to add plugins to help with workflow.
 
 ## HTML5(#html5)
