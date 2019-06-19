@@ -10,6 +10,31 @@
 
   <script>
 
+    //web server for chrome
+    d3.json("/data/mydata.json", function(data){   // or d3.csv
+              var canvas = d3.select("body").append("svg")
+                      .attr("width", 500)
+                      .attr("height", 500)
+
+              canvas.selectAll("rect")
+                      .data(data) //specify where data is that is specified the call back function
+                      .enter()
+                          .append("rect")
+                          .attr("width", function(d) {return d.age * 10})
+                          .attr("height", 50)
+                          .attr("y", function(d, i) {return i*55})
+                          .attr("fill", "blue");
+              canvas.selectAll("text")
+                      .data(data)
+                      .enter()
+                          .append("text")
+                          .attr("fill", 'white')
+                          .attr("y", function(d, i) {return i*55 +30})
+                          .attr("x", 10)
+                          .text(function(d) {return d.name + " " + d.age})
+
+
+     })
 
   </script>
 
