@@ -1,14 +1,14 @@
 # d3 Guide
 
 - [Atom](#atom)
-- [HTML5](#atom)
-- [CSS](#css-details)
+- [HTML5](#html5)
+- [CSS](#css)
 
 
-## Atom(#atom)
+## Atom
 It's useful to have some sort of code editor, [Atom](https://atom.io/) is really nice and allows you to add plugins to help with workflow.
 
-## HTML5(#html5)
+## HTML5
 [HTML5](https://www.w3.org/TR/html52/) website is a great reference and has all information you'll need.
 
 ### Structuring HTML5 Documents
@@ -123,7 +123,7 @@ Use H1 per page (in the <header> section). It is the main header of the document
 <p> Text goes here for a paragraph </p>
 ```
 
-## CSS details
+## CSS
 
 #### Headings
 Headings create new sections.
